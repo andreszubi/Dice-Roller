@@ -23,21 +23,23 @@ struct ContentView: View {
             }
             
             HStack {
-                Button("Remove Dice") {
+                Button("Remove Dice", systemImage: "minus.circle.fill") {
                     withAnimation {
                         numberOfDice -= 1
                     }
                 }
                 .disabled(numberOfDice == 1)
                 
-                Button("Add Dice") {
+                Button("Add Dice", systemImage: "plus.circle.fill") {
                     withAnimation {
                         numberOfDice += 1
                     }
                 }
-                .disabled(numberOfDice == 3)
+                .disabled(numberOfDice == 6)
             }
             .padding()
+            .labelStyle(.iconOnly)
+            .font(.title)
         }
         .padding()
     }

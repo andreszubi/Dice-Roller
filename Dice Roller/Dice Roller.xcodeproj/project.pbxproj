@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		416F50102F48C0D900EBC397 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 416F500F2F48C0D200EBC397 /* .gitignore */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		416F4FF92F48BAE800EBC397 /* Dice Roller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dice Roller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		416F500F2F48C0D200EBC397 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,7 +32,6 @@
 		416F4FF02F48BAE800EBC397 = {
 			isa = PBXGroup;
 			children = (
-				416F500F2F48C0D200EBC397 /* .gitignore */,
 				416F4FFB2F48BAE800EBC397 /* Dice Roller */,
 				416F4FFA2F48BAE800EBC397 /* Products */,
 			);
@@ -115,7 +109,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				416F50102F48C0D900EBC397 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

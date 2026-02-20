@@ -17,10 +17,27 @@ struct ContentView: View {
                 .bold()
             
             HStack {
-                ForEach(1...3, id: \.description) { _ in
+                ForEach(1...numberOfDice, id: \.description) { _ in
                     DiceView()
                 }
             }
+            
+            HStack {
+                Button("Remove Dice") {
+                    withAnimation {
+                        numberOfDice -= 1
+                    }
+                }
+                .disabled(numberOfDice == 1)
+                
+                Button("Add Dice") {
+                    withAnimation {
+                        numberOfDice += 1
+                    }
+                }
+                .disabled(numberOfDice == 3)
+            }
+            .padding()
         }
         .padding()
     }

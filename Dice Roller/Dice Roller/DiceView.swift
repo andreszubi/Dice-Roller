@@ -16,15 +16,20 @@ struct DiceView: View {
                 .resizable()
                 .frame(maxWidth: 100, maxHeight: 100)
                 .aspectRatio(1, contentMode: .fit)
+                .foregroundStyle(.black, .white)
             
             Button("Roll") {
                 withAnimation {
                     numberOfPips = Int.random(in: 1...6)
                 }
             }
+            .padding()
             .buttonStyle(.glassProminent)
+            .foregroundStyle(.teal, .white)
+            .font(.title)
         }
     }
+
 }
 
 #Preview {
